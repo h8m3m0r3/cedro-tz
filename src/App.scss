@@ -100,11 +100,11 @@
       flex-direction: row;
       padding-inline: 16px;
       width: 288px;
+      max-height: 58px;
       align-items: flex-start;
       gap: 4px;
       border-bottom: 1px solid rgba(7, 0, 15, 0.1);
-      overflow-x: auto; /* Добавить горизонтальную прокрутку для элементов, которые не вмещаются */
-  white-space: nowrap; /* Предотвратить перенос текста на новую строку */
+      overflow-x: hidden;
       .picked__item {
         display: flex;
         height: 32px;
@@ -132,13 +132,16 @@
         }
       }
     }
-    
+
     .tab__list {
-      
+      max-height: 282px;
+      height: 100%;
       margin: 10px 0 10px 0;
       display: flex;
       flex-wrap: nowrap;
       overflow-x: auto;
+
+      flex: content;
       ul {
         max-height: 225px;
         li {
@@ -211,7 +214,9 @@
       width: 100%;
       height: 80px; /* Высота градиента */
       background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+      border-radius: 20px;
       pointer-events: none; /* Чтобы псевдоэлемент не перекрывал контент */
+      z-index: 2;
     }
   }
   .dropdown.active {
