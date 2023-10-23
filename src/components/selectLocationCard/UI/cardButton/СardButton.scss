@@ -1,0 +1,52 @@
+.card__btn {
+  display: flex;
+  height: 48px;
+  max-width: 320px;
+  width: 100%;
+  padding: 0px 8px 0px 16px;
+  align-items: center;
+  justify-content: space-between;
+
+  border-radius: 12px;
+  border: 1px solid var(--border-primary, rgba(7, 0, 15, 0.1));
+  background: var(--bg-neutral, rgba(2, 22, 45, 0.05));
+  .btn__info {
+    display: flex;
+    gap: 8px;
+    cursor: pointer;
+    .btn__text {
+      color: #07000f;
+      font-family: "Roboto Condensed";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 100%; /* 16px */
+      letter-spacing: -0.32px;
+      text-transform: uppercase;
+    }
+  }
+  span {
+    display: flex;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    border-radius: 32px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--border-primary, rgba(7, 0, 15, 0.1));
+    background: var(--bg-accent, #0067fe);
+
+    color: white;
+    font-family: "Roboto Condensed";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 16px */
+    letter-spacing: -0.32px;
+    text-transform: uppercase;
+  }
+  span:hover {
+    border: 1px solid var(--border-primary, rgba(7, 0, 15, 0.1));
+    background: var(--bg-accent-hover, #085edb);
+  }
+}
